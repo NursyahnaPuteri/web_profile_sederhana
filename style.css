@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#landing-page {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #e6e6fa;
+}
+
+.welcome-text {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+}
+
+.nav {
+  list-style: none;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.section-introduction,
+.section-education,
+.section-working {
+  margin-bottom: 30px;
+}
+
+.img-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.title-portofolio {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  background-color: #c0c0c0;
+}
+
+.img-portfolio {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.title-contact-us {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-contact-us {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.inputan {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-kirim {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-kirim:hover {
+  background-color: #0056b3;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #dcdcdc;
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+
+.contact-info h3 {
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+
+.nav li a {
+  background-color: #a9a9a9;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav li a:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.section-introduction,
+.section-education,
+.section-working {
+  max-width: 33%;
+  padding: 20px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  margin: auto;
+}
+
+.img-icon {
+  display: block;
+  width: 350px;
+  height: auto;
+  margin: 0 auto 20px;
+}
+
+.content-perkenalan {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  background-size: cover;
+  color: white;
+  font-size: 11px;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .img-portfolio {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav li {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .img-icon {
+    width: 200px;
+    height: 180px;
+  }
+
+  .img-portfolio {
+    width: 100%;
+  }
+
+  .title-contact-us,
+  .title-portofolio {
+    font-size: 24px;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-introduction,
+  .section-education,
+  .section-working {
+    max-width: 100%;
+  }
+}
